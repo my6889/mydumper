@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  mydumper:
+    image: my6889/mydumper:v1.3
+    env_file:
+      - mydumper.env
+    volumes:
+      - /data/mydumper/:/mysqldump
